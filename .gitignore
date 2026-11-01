@@ -1,0 +1,5 @@
+# Never commit firmware images
+*.BIN
+*.bin
+*.sqsh
+__pycache__/
