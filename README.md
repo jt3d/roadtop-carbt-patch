@@ -6,6 +6,21 @@ Patches the stock RoadTop S7 LT v3.0.1 `GEMINI_PACK.BIN` (BMW NBT/EVO, `QD505-QD
 
 The script refuses to run on any other input file.
 
+## Who this is for
+It was written for early BMW F-series cars, typically built before April 2014, that have the **S6NHA "Hands-free with USB interface"** option. That option provides:
+- Bluetooth hands-free calling through iDrive, and
+- a USB audio interface with an AUX port,
+
+but **no Bluetooth audio streaming (A2DP)**.
+
+With stock firmware, these cars force a bad trade-off:
+- **"Use Car's BT Channel" OFF:** media plays over AUX, but calls use the retrofit screen's own microphone.
+- **"Use Car's BT Channel" ON:** calls go through iDrive and the car's microphone, but the head unit expects media to stream to the car over Bluetooth. The car can't receive that, so media goes silent.
+
+This patcher gives you both: calls through iDrive and media over AUX.
+
+**If your car already supports A2DP streaming, this patcher is probably not for you.** Turning on "Use Car's BT Channel" in the stock firmware should already send calls and media through the car.
+
 ## Builds
 | Build | Setting "Use Car's BT Channel" | Status | What it does |
 |---|---|---|---|
